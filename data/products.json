@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "title": "mouse",
+        "desc":"good mouse",
+        "img":"/img/mouse.avif",
+        "price":"15$"
+    },
+    {
+        "id":2,
+        "title": "keyboard",
+        "desc":"good keyboard",
+        "img":"/img/keyboard.png",
+        "price":"20$"
+    },
+    {
+        "id":3,
+        "title": "book",
+        "desc":"good book",
+        "img":"/img/book.jpg",
+        "price":"13$"
+    }
+]
