@@ -13,13 +13,25 @@ const getProducts = (req, res, next) => {
   });
 };
 
-const cart = (req, res, next) => {
-  res.render("shop/cart", { pageTitle: "Cart", path: "/cart" })
-}
+const getCart = (req, res, next) => {
+  res.render("shop/cart", { pageTitle: "Cart", path: "/cart" });
+};
+
+const getIndex = (req,res,next) => {
+  res.render("shop/index", { pageTitle: "Index", path: "/" });
+};
+
+const getCheckout = (req,res,next) => {
+  res.render("shop/checkout", { pageTitle: "checkout", path: "/checkout" });
+};
+
+
 
 const productController = {
   getProducts,
-  cart
+  getIndex,
+  getCheckout,
+  getCart
 };
 
 module.exports = productController;

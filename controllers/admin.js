@@ -13,12 +13,13 @@ const postAddProduct = (req, res, next) => {
     res.redirect('/');
 };
 
-const products = (req, res, next) => {
+ let getProducts = (req, res, next) => {
     res.render("admin/products", { pageTitle: "Products", path: "/products" });
 };
 
 const adminController = {
     getAddProduct,
     postAddProduct,
-    products
-}
+    getProducts
+};
+module.exports = adminController;
